@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Enterprise from "./pages/Enterprise";
 import CarbonCredit from "./pages/CarbonCredit";
+import Resources from "./pages/Resources";
 import Footer from "./components/Footer";
 import "./App.css";
-import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route path="/carbon-credit" element={<CarbonCredit />} />
           <Route path="/resources" element={<Resources />} />
         </Routes>
+
         <Footer />
       </div>
     </BrowserRouter>

@@ -66,16 +66,19 @@ const Navbar = ({ darkText = false }) => {
             SOLUTION
           </button>
 
-          <a
-            href="#"
-            className={`transition-colors shrink-0 ${
-              darkText
-                ? "hover:text-purple-700"
-                : "hover:text-purple-200"
-            }`}
-          >
-            RESOURCES
-          </a>
+        <button
+  type="button"
+  onClick={() => {
+    navigate("/resources");
+    window.scrollTo(0, 0);
+    setShowSolutionMenu(false);
+  }}
+  className={`transition-colors shrink-0 ${
+    darkText ? "hover:text-purple-700" : "hover:text-purple-200"
+  }`}
+>
+  RESOURCES
+</button>
 
           <a
             href="#"

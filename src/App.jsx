@@ -5,6 +5,7 @@ import Enterprise from "./pages/Enterprise";
 import CarbonCredit from "./pages/CarbonCredit";
 import Footer from "./components/Footer";
 import "./App.css";
+import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/carbon-credit" element={<CarbonCredit />} />
+          <Route path="/resources" element={<Resources />} />
         </Routes>
         <Footer />
       </div>

@@ -283,7 +283,7 @@ export default function IndianPublicSector() {
       </section>
 
       {/* Overhauled Dark System Footer */}
-      <footer className="site-footer-dark"></footer>/* paste her code starting from HERO section here */}
+      <footer className="site-footer-dark"></footer>
     </div>
   );
 }

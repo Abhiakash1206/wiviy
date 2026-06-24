@@ -7,7 +7,8 @@ import Resources from "./pages/Resources";
 import Footer from "./components/Footer";
 import "./App.css";
 import IndianPublicSector from "./pages/IndianPublicSector";
-
+import GlobalPublicSector from "./pages/GlobalPublicSector";
+import Careers from "./pages/Careers";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,9 @@ function App() {
           <Route path="/carbon-credit" element={<CarbonCredit />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/indian-public-sector" element={<IndianPublicSector />} />
+          <Route path="/global-public-sector" element={<GlobalPublicSector />} />
+          <Route path="/careers" element={<Careers />} />
+ 
         </Routes>
 
         <Footer />

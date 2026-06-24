@@ -91,16 +91,19 @@ const Navbar = ({ darkText = false }) => {
             ABOUT US
           </a>
 
-          <a
-            href="#"
-            className={`transition-colors shrink-0 ${
-              darkText
-                ? "hover:text-purple-700"
-                : "hover:text-purple-200"
-            }`}
-          >
-            CAREERS
-          </a>
+     <button
+  type="button"
+  onClick={() => {
+    navigate("/careers");
+    window.scrollTo(0, 0);
+    setShowSolutionMenu(false);
+  }}
+  className={`transition-colors shrink-0 ${
+    darkText ? "hover:text-purple-700" : "hover:text-purple-200"
+  }`}
+>
+  CAREERS
+</button>
         </div>
 
         {/* Request Demo */}
@@ -127,17 +130,17 @@ const Navbar = ({ darkText = false }) => {
               ENTERPRISE
             </button>
 
-            <button
-              type="button"
-              onClick={() => {
-                navigate("/carbon-credit");
-                window.scrollTo(0, 0);
-                setShowSolutionMenu(false);
-              }}
-              className="text-left hover:text-purple-700 transition-colors"
-            >
-              GLOBAL PUBLIC SECTOR
-            </button>
+   <button
+  type="button"
+  onClick={() => {
+    navigate("/global-public-sector");
+    window.scrollTo(0, 0);
+    setShowSolutionMenu(false);
+  }}
+  className="text-left hover:text-purple-700 transition-colors"
+>
+  GLOBAL PUBLIC SECTOR
+</button>
 
             <button
   type="button"

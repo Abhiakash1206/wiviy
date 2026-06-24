@@ -140,12 +140,16 @@ const Navbar = ({ darkText = false }) => {
             </button>
 
             <button
-              type="button"
-              className="text-left hover:text-purple-700 transition-colors"
-            >
-              INDIAN PUBLIC SECTOR
-            </button>
-
+  type="button"
+  onClick={() => {
+    navigate("/indian-public-sector");
+    window.scrollTo(0, 0);
+    setShowSolutionMenu(false);
+  }}
+  className="text-left hover:text-purple-700 transition-colors"
+>
+  INDIAN PUBLIC SECTOR
+</button>
           </div>
         </div>
       )}

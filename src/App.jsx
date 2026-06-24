@@ -6,6 +6,7 @@ import CarbonCredit from "./pages/CarbonCredit";
 import Resources from "./pages/Resources";
 import Footer from "./components/Footer";
 import "./App.css";
+import IndianPublicSector from "./pages/IndianPublicSector";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/carbon-credit" element={<CarbonCredit />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/indian-public-sector" element={<IndianPublicSector />} />
         </Routes>
 
         <Footer />
